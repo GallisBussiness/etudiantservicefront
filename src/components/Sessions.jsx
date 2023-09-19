@@ -180,7 +180,7 @@ export const Sessions = () => {
             paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
             rowsPerPageOptions={[10, 25, 50]}
             dataKey="_id"
-            rowHover
+            size="small"
             selection={selectedSessions}
             onSelectionChange={(e) => setSelectedSessions(e.value)}
             filters={filters}
@@ -189,7 +189,7 @@ export const Sessions = () => {
             responsiveLayout="scroll"
             globalFilterFields={["nom"]}
             emptyMessage="Aucun Session trouvé"
-            currentPageReportTemplate="Voir {first} de {last} à {totalRecords} étudiants"
+            currentPageReportTemplate="Voir {first} de {last} à {totalRecords} sessions"
           >
             <Column
               selectionMode="multiple"

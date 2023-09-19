@@ -180,7 +180,7 @@ export const Ufrs = () => {
             paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
             rowsPerPageOptions={[10, 25, 50]}
             dataKey="_id"
-            rowHover
+            size="small"
             selection={selectedUfrs}
             onSelectionChange={(e) => setSelectedUfrs(e.value)}
             filters={filters}
@@ -189,7 +189,7 @@ export const Ufrs = () => {
             responsiveLayout="scroll"
             globalFilterFields={["nom"]}
             emptyMessage="Aucun Ufr trouvé"
-            currentPageReportTemplate="Voir {first} de {last} à {totalRecords} étudiants"
+            currentPageReportTemplate="Voir {first} de {last} à {totalRecords} ufrs"
           >
             <Column
               selectionMode="multiple"

@@ -12,7 +12,6 @@ import {
 } from "../services/inscriptionservice";
 import { useMutation, useQuery, useQueryClient } from "react-query";
 import { FaPencilAlt, FaUniregistry } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
 import CreateInscription from "../crud/CreateInscription";
 import { showNotification } from "@mantine/notifications";
 import UpdateInscription from "../crud/UpdateInscription";

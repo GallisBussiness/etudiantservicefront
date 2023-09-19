@@ -54,7 +54,7 @@ const Dashboard = () => {
       <div className="drawer drawer-mobile">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
-          <div className="navbar bg-sky-900">
+          <div className="navbar bg-sky-500">
             <div className="flex-none">
               <button className="btn btn-square btn-ghost">
                 <label
@@ -84,7 +84,7 @@ const Dashboard = () => {
             </div>
           </div>
           <Routes>
-            <Route path="" element={<Users />} />
+            <Route path="" element={<Etudiants />} />
             <Route path="users" element={<Users />} />
             <Route path="users/create" element={<CreateUser />} />
             <Route path="users/update/:id" element={<UpdateUser />} />

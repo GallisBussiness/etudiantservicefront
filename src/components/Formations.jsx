@@ -176,7 +176,7 @@ export const Formations = () => {
             paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
             rowsPerPageOptions={[10, 25, 50]}
             dataKey="_id"
-            rowHover
+            size="small"
             selection={selectedFormations}
             onSelectionChange={(e) => setSelectedFormations(e.value)}
             filters={filters}

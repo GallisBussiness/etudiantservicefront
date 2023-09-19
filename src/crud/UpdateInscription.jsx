@@ -14,6 +14,7 @@ const schema = yup
     etudiant: yup.string().required(),
     session: yup.string().required(),
     formation: yup.string().required(),
+    active : yup.boolean().required()
   })
   .required();
 
@@ -32,6 +33,7 @@ const UpdateInscription = ({
     etudiant: etudiant._id,
     session: inscription?.session?._id,
     formation: inscription?.formation?._id,
+    active: inscription?.active,
   };
 
   const {
